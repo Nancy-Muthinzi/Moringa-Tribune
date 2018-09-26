@@ -20,11 +20,7 @@ class Editor(models.Model):
     def retrive_all_editors(cls):
         editors = Editor.objects.all()
         return editors  
-
-    # @classmethod
-    # def update_editors(self):
-    #     return edit
-
+   
     class Meta:
         ordering = ['first_name']    
 
